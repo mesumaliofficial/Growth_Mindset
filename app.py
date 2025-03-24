@@ -1,5 +1,10 @@
 import streamlit as st
 from streamlit_option_menu import option_menu
+st.set_page_config(
+    page_title="Python Projects",
+    page_icon="🐍",
+    layout="centered",
+)
 
 st.markdown("""
     <style>
@@ -34,3 +39,11 @@ with st.sidebar:
 if selected == "Mad Libs":
     from Mad_Libs import generate_madlibs
     generate_madlibs()
+
+if selected == "Guess the Number (Com)":
+    from guess_the_num import comp_guess
+    comp_guess()
+
+if selected == "Guess the Number (User)":
+    from guess_num_user import user_guess
+    user_guess()

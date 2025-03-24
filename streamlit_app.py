@@ -47,3 +47,7 @@ if selected == "Guess the Number (Com)":
 if selected == "Guess the Number (User)":
     from guess_num_user import user_guess
     user_guess()
+
+if selected == "Rock, Paper, Scissors":
+    from Rock_Paper_Scissor import play
+    play()

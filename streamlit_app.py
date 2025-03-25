@@ -55,3 +55,7 @@ if selected == "Rock, Paper, Scissors":
 if selected == "Hangman":
     from Hangman import hangman
     hangman()
+
+if selected == "Countdown Timer":
+    from Countdown import countdownTimer
+    countdownTimer()

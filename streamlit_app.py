@@ -51,3 +51,7 @@ if selected == "Guess the Number (User)":
 if selected == "Rock, Paper, Scissors":
     from Rock_Paper_Scissor import play
     play()
+
+if selected == "Hangman":
+    from Hangman import hangman
+    hangman()

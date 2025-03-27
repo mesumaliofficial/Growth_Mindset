@@ -21,6 +21,7 @@ with st.sidebar:
     selected = option_menu(
         menu_title="Python Projects",
         options=[
+            "Portfolio",
             "Mad Libs",
             "Guess the Number (Com)",
             "Guess the Number (User)",
@@ -29,12 +30,16 @@ with st.sidebar:
             "Countdown Timer",
             "Password Generator",
             "BMI Calculator",
-            "Python Website"
         ],
         icons=["book", "123", "123", "scissors", "puzzle",
                "hourglass", "key", "calculator", "globe"],
         menu_icon="code-square",
     )
+
+
+if selected == "Portfolio":
+    from Portfolio import portfolio
+    portfolio()
     
 if selected == "Mad Libs":
     from Mad_Libs import generate_madlibs
@@ -59,3 +64,11 @@ if selected == "Hangman":
 if selected == "Countdown Timer":
     from Countdown import countdownTimer
     countdownTimer()
+
+if selected == "Password Generator":
+    from Password_Generator import password_generator
+    password_generator()
+
+if selected == "BMI Calculator":
+    from BMI_Calculator import bmi_calculator
+    bmi_calculator()
